@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Legends Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+          <img src="images/mlbb-logo.png" alt="mlbb-logo" class="head">
+          <nav>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#heroes">Heroes</a></li>
+              <li><a href="#cipher">Cipher Tool</a></li>
+              <li><a href="login.php">Login</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      
+
+    <main>
+        
+        <!-- Main Content Section -->
+        <section class="main-content">
+            <h2>Welcome to the Mobile Legends Blog</h2>
+            <p>Mobile Legends: Bang Bang (MLBB) is one of the most popular mobile multiplayer online battle arena (MOBA) games. In this blog, we provide updates, hero guides, and pro strategies to help you dominate the battlefield.</p>
+            <p>Whether you're a beginner or an experienced player, we cover everything from hero builds, meta changes, and rank-up tips. Dive into our latest content below.</p>
+            <p>The game features **5v5 real-time battles**, where players must strategically choose heroes, farm for gold, and destroy enemy towers to win. With over 100 heroes, each with unique abilities, MLBB offers endless possibilities for competitive gaming.</p>
+            <p>MLBB is famous for its **fast-paced action, strategic depth, and diverse hero pool**. Players can choose from assassins, mages, tanks, marksmen, fighters, and supports, each with their own playstyle. Understanding hero roles is crucial to winning matches.</p>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="blog-container">
+            <h2>Latest MLBB Blog Posts</h2>
+            
+
+            <article class="blog-post">
+                <img src="images/lancelot.png"  alt="Lancelot Hero" class="fixed-image">
+                <h3>Mastering Lancelot: Pro Tips & Tricks</h3>
+                <p>Learn how to use Lancelot's skills effectively, the best item builds, and pro movement techniques to dominate the battlefield.</p>
+                <button onclick="readMore('Lancelot')">Read More</button>
+            </article>
+
+            <article class="blog-post">
+                <img src="images/mlbb-new-update.png" alt="MLBB Update" class="fixed-image">
+                <h3>Latest Patch Update: New Buffs & Nerfs</h3>
+                <p>Check out the latest patch updates, including buffs, nerfs, and item changes that will impact the MLBB meta.</p>
+                <button onclick="readMore('Update')">Read More</button>
+            </article>
+
+            <article class="blog-post">
+                <img src="images/mlbb-mythic-rank.jpg" alt="Mythic Rank" class="fixed-image">
+                <h3>How to Reach Mythic Rank Fast</h3>
+                <p>Struggling to rank up? Follow these tips to improve your gameplay, hero picks, and positioning to reach Mythic rank quickly.</p>
+                <button onclick="readMore('Mythic Rank')">Read More</button>
+            </article>
+
+            <article class="blog-post">
+                <img src="images/mlbb-meta.jpg" alt="MLBB Meta" class="fixed-image">
+                <h3>Current Meta Heroes: Who to Pick?</h3>
+                <p>Find out which heroes are dominating the MLBB ranked matches and how you can use them to secure victory.</p>
+                <button onclick="readMore('Meta Heroes')">Read More</button>
+            </article>
+
+            <article class="blog-post">
+              <img src="images/alpha.jpg" alt="Alpha skin" class="fixed-image">
+              <h3>Alpha "revenant of Roses"</h3>
+              <p>Check out Alpha "Revenanct of Roses, The first Legend dual-form skin featuring the new Dynamic Portrait".</p>
+              <button onclick="readMore('Update')">Read More</button>
+          </article>
+        </section>
+
+        
+
+            
+
+        <!-- Heroes and Skills Section -->
+        <section id="heroes" class="heroes-section">
+            <h2>MLBB Heroes & Their Skills</h2>
+            <p>Understanding hero skills and roles is key to winning in Mobile Legends. Here are some of the strongest heroes in the game and their ultimate abilities.</p>
+
+            <div class="hero-container">
+                <div class="hero-card">
+                    <img src="images/lancelot.png" alt="Lancelot">
+                    <h3>Lancelot</h3>
+                    <p><strong>Ultimate:</strong> Phantom Execution - Lancelot dashes forward, dealing massive damage in a straight line.</p>
+                    <p>Playstyle: Assassin. Best used for quick eliminations and escaping battles.</p>
+                </div>
+
+                <div class="hero-card">
+                    <img src="images/aldous.jpg" alt="Aldous">
+                    <h3>Aldous</h3>
+                    <p><strong>Ultimate:</strong> Chase Fate - Aldous locks onto an enemy and dashes across the map to attack.</p>
+                    <p>Playstyle: Fighter. Can one-shot enemies in the late game.</p>
+                </div>
+
+                <div class="hero-card">
+                    <img src="images/kagura.jpeg" alt="Kagura">
+                    <h3>Kagura</h3>
+                    <p><strong>Ultimate:</strong> Yin Yang Overturn - Kagura uses her umbrella to pull enemies and deal magic damage.</p>
+                    <p>Playstyle: Mage. High mobility and AoE damage.</p>
+                </div>
+
+                <div class="hero-card">
+                    <img src="images/gusion.jpg" alt="Gusion">
+                    <h3>Gusion</h3>
+                    <p><strong>Ultimate:</strong> Incandescence - Instantly resets all skill cooldowns for deadly burst combos.</p>
+                    <p>Playstyle: Assassin. Best for fast, high-damage combos.</p>
+                </div>
+
+                <div class="hero-card">
+                    <img src="images/franco.jpg" alt="Franco">
+                    <h3>Franco</h3>
+                    <p><strong>Ultimate:</strong> Bloody Hunt - Suppresses an enemy with a chain of attacks.</p>
+                    <p>Playstyle: Tank. Great for crowd control and setting up kills.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section id="cipher" class="caesar-section">
+        <h2>Caesar Cipher Tool</h2>
+        <p>Encrypt or decrypt your messages using the classic Caesar cipher. Choose your shift value and click encode or decode.</p>
+    
+        <label for="inputText">Enter Text:</label>
+        <textarea id="inputText" rows="3" cols="50" placeholder="Type your message here..."></textarea><br>
+    
+        <label for="shift">Shift (0-25):</label>
+        <input type="number" id="shift" min="0" max="25" value="3"><br>
+    
+        <button onclick="encodeCaesar()">Encode</button>
+        <button onclick="decodeCaesar()">Decode</button>
+    
+        <h3>Result:</h3>
+        <div id="cipherResult" class="cipher-output"></div>
+    </section>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
